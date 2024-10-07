@@ -8,7 +8,7 @@ type Node struct {
 }
 
 func MakeNode(num int) *Node {
-	return &Node{ value: num, Left: nil, Right: nil}
+	return &Node{ value: num, Left: nil, Right: nil }
 }
 
 func (tree *Node) InsertNode(num int) {
