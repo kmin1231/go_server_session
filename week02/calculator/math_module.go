@@ -15,10 +15,10 @@ func Multiply(a int, b int) int {
 	return a *  b
 }
 
-func Divide(a int, b int) int {
-	if (b == 0) {
-		fmt.Println("Error: division by ZERO!")
-		return 0
+func Divide(a int, b int) string {
+	if b == 0 {
+		fmt.Print("Error: division by ZERO --- ")
+		return "?"
 	}
-	return a / b
+	return fmt.Sprintf("%d", a/b)
 }
