@@ -1,14 +1,15 @@
-package main
+// lab/main.go
 
+package main
 import (
 	"fmt"
-	"github.com/kmin1231/go_server_session/week02_241001/tree"
+	"github.com/kmin1231/go_server_session/week02/tree"
 )
 
 /* to use 'bst' module,
-	go get github.com/kmin1231/go_server_session/week02_241001/tree
+	go get github.com/kmin1231/go_server_session/week02/tree
 	* package name 'bst'
-	* command execution directory: /week02_241001/lab
+	* command execution directory: /week02/lab
 */
 
 func main() {

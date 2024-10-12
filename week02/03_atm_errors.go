@@ -1,3 +1,5 @@
+// 03_atm_errors.go
+
 package main
 import "fmt"
 
@@ -15,7 +17,7 @@ func (account *BankAccount) Deposit(amount int) {
 
 func (account *BankAccount) Withdraw(amount int) {
 	if (amount <= 0) {
-		panic(fmt.Errorf("Error: cannot withdrwaw negative value! KRW %d \n", amount))
+		panic(fmt.Errorf("Error: cannot withdrwaw a negative amount! KRW %d \n", amount))
 	}
 
 	if (amount > account.balance) {
@@ -32,13 +34,13 @@ func main() {
     var choice string
 
     for {
-        println("Deposit (1), Withdraw (2), Exit (Others) : ")
+        fmt.Print("Deposit (1), Withdraw (2), Exit (Others): ")
         fmt.Scanln(&choice)
 
         switch choice {
         case "1":
             var amount int
-            println("Enter the amount to deposit: ")
+            fmt.Print("Enter the amount to deposit: ")
             fmt.Scanln(&amount)
 
             // try to deposit -> if an error occurs, handles the error
@@ -53,7 +55,7 @@ func main() {
 
         case "2":
             var amount int
-            fmt.Println("Enter the amount to withdraw: ")
+            fmt.Print("Enter the amount to withdraw: ")
             fmt.Scanln(&amount)
 
             // try to withdraw -> if an error occurs, handles the error
@@ -67,7 +69,7 @@ func main() {
             }()
 
         default:
-            fmt.Println("Exiting the program!")
+            fmt.Println(">> Exiting the program!")
             return
         }
     }

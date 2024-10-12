@@ -1,3 +1,5 @@
+// tree/bst.go
+
 package bst
 import "fmt"
 
