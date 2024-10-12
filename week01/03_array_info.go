@@ -1,3 +1,5 @@
+// 03_array_info.go
+
 package main
 import "fmt"
 
