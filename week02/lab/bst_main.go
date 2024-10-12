@@ -1,4 +1,4 @@
-// lab/main.go
+// lab/bst_main.go
 
 package main
 import (
