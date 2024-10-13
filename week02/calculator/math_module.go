@@ -16,7 +16,7 @@ func Multiply(a int, b int) int {
 }
 
 func Divide(a int, b int) string {
-	if b == 0 {
+	if (b == 0) {
 		fmt.Print("Error: division by ZERO --- ")
 		return "?"
 	}

@@ -12,7 +12,7 @@ import("fmt")
 func main() {
 	var n int
 
-	fmt.Println("Please enter your integer n:")
+	fmt.Print("Please enter your integer n: ")
 	fmt.Scanf("%d", &n)
 
 	fmt.Println(C.fibonacci(C.int(n)))
