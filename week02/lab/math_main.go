@@ -1,4 +1,4 @@
-// lab/bst_main.go
+// lab/math_main.go
 
 package main
 import (
@@ -12,7 +12,7 @@ func main() {
     fmt.Printf("%d + %d = %d\n", a, b, calculator.Add(a, b))
 	fmt.Printf("%d - %d = %d\n", a, b, calculator.Subtract(a, b))
 	fmt.Printf("%d * %d = %d\n", a, b, calculator.Multiply(a, b))
-	fmt.Printf("%d / %d = %d\n", a, b, calculator.Divide(a, b))
+	fmt.Printf("%d / %d = %s\n", a, b, calculator.Divide(a, b))
 
 	// TRY: Zero Division
 	c := 0

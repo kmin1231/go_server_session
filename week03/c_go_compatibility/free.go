@@ -11,5 +11,5 @@ import "unsafe" // to avoid memory leak
 func main() {
     a := C.CString("This is from Golang")
     C.printString(a)
-    C.free(unsafe.Pointer(a))  // 메모리 할당 해제 (generic pointer: type 가리지 않음)
+    C.free(unsafe.Pointer(a))
 }
