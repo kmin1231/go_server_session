@@ -22,9 +22,7 @@ This 8-week study session focuses on learning <b><code>Go</code></b> language an
     - CI/CD practices
     - Test writing
 
-<br>
-
-#### 💡 Development Environment
+### 💡 Development Environment
 - Windows laptop
 - WSL2: **Ubuntu 22.04.3**
 - Go: version **1.23.1**
