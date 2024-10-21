@@ -24,6 +24,13 @@ This 8-week study session focuses on learning <b><code>Go</code></b> language an
 
 <br>
 
+#### 💡 Development Environment
+- Windows laptop
+- WSL2: **Ubuntu 22.04.3**
+- Go: version **1.23.1**
+
+<br>
+
 ## 📚 Reference
 - 탠메이 박시, 바히어 카말, 『[<b>백엔드를 위한 Go 프로그래밍</b>](https://product.kyobobook.co.kr/detail/S000061583679)』, 영진닷컴, 2022.
 - Tanmay Bakshi, Baheer Kamal, 『[<b>Tanmay Teaches Go</b>](https://product.kyobobook.co.kr/detail/S000021576923)』, McGraw Hill Tab, 2021.
