@@ -1,6 +1,6 @@
 coverage:
   paths:
-    - week05/coverage.out
+    - week05/Chapter15/coverage.out
 codeToTestRatio:
   code:
    - '**/*.go'
