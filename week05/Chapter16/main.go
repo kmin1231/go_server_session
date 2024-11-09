@@ -9,12 +9,12 @@ import (
 	"os"
 
 	"golang.org/x/sync/errgroup"
-	"github.com/kmin1231/go_server_session/weke05/Chapter16/config"
+	"github.com/kmin1231/go_server_session/week05/Chapter16/config"
 )
 
 func main() {
-	if err := run(context.Background(), l); err != nil {
-		log.Printf("failed to terminate server: %v", err)
+	if err := run(context.Background()); err != nil {
+		log.Printf("failed to terminated server: %v", err)
 		os.Exit(1)
 	}
 }
@@ -49,5 +49,7 @@ func run(ctx context.Context) error {
 	if err := s.Shutdown(context.Background()); err != nil {
 		log.Printf("failed to shutdown: %+v", err)
 	}
+
+	fmt.Printf("Configured Port: %d\n", cfg.Port)
 	return eg.Wait()
 }

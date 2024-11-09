@@ -12,7 +12,7 @@ COPY . .
 RUN go build -trimpath -ldflags "-w -s" -o app
 
 # Deployment stage
-FROM debian:bullseye-slim as deploy
+FROM debian:bullseye-slim AS deploy
 
 COPY --from=deploy-bullder /app/app .
 

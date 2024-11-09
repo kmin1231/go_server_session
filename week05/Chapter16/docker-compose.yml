@@ -3,7 +3,6 @@ services:
   app:
     image: gotodo
     build:
-      dockerfile: Dockerfile
       args:
         target: dev
     environment:
