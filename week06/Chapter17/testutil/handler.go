@@ -10,6 +10,7 @@ import (
 	"github.com/google/go-cmp/cmp"
 )
 
+// defines a helper function to compare JSON responses
 func AssertJSON(t *testing.T, want, got []byte) {
 	t.Helper()
 
@@ -24,6 +25,8 @@ func AssertJSON(t *testing.T, want, got []byte) {
 		t.Errorf("got differs: (-got +want)\n%s", diff)
 	}
 }
+
+// defines a helper function to verify HTTP responses
 func AssertResponse(t *testing.T, got *http.Response, status int, body []byte) {
 	t.Helper()
 	t.Cleanup(func() { _ = got.Body.Close() })
@@ -41,6 +44,7 @@ func AssertResponse(t *testing.T, got *http.Response, status int, body []byte) {
 	AssertJSON(t, body, gb)
 }
 
+// helper function to read a file & return it as a byte slice
 func LoadFile(t *testing.T, path string) []byte {
 	t.Helper()
 
