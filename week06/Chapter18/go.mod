@@ -4,9 +4,10 @@ go 1.23.1
 
 require (
 	github.com/caarlos0/env/v6 v6.10.1
+	github.com/go-chi/chi/v5 v5.1.0
 	github.com/go-playground/validator/v10 v10.22.1
 	github.com/google/go-cmp v0.6.0
-	github.com/kmin1231/go_server_session/week06/Chapter17 v0.0.0-20241112154358-105340274ea0
+	golang.org/x/sync v0.9.0
 )
 
 require (

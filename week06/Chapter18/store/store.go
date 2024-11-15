@@ -3,7 +3,7 @@ package store
 import (
 	"errors"
 
-	"github.com/kmin1231/go_server_session/week06/Chapter17/entity"
+	"github.com/kmin1231/go_server_session/week06/Chapter18/entity"
 )
 
 var (

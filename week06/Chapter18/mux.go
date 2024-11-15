@@ -5,8 +5,8 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-playground/validator/v10"
-	"github.com/kmin1231/go_server_session/week06/Chapter17/handler"
-	"github.com/kmin1231/go_server_session/week06/Chapter17/store"
+	"github.com/kmin1231/go_server_session/week06/Chapter18/handler"
+	"github.com/kmin1231/go_server_session/week06/Chapter18/store"
 )
 
 func NewMux() http.Handler {

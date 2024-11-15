@@ -7,7 +7,7 @@ import (
 	"net"
 	"os"
 
-	"github.com/kmin1231/go_server_session/week06/Chapter17/config"
+	"github.com/kmin1231/go_server_session/week06/Chapter18/config"
 )
 
 func main() {

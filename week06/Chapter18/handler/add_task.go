@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/go-playground/validator/v10"
-	"github.com/kmin1231/go_server_session/week06/Chapter17/entity"
-	"github.com/kmin1231/go_server_session/week06/Chapter17/store"
+	"github.com/kmin1231/go_server_session/week06/Chapter18/entity"
+	"github.com/kmin1231/go_server_session/week06/Chapter18/store"
 )
 
 type AddTask struct {
