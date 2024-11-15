@@ -48,9 +48,13 @@ func TestAddTask(t *testing.T) {
 				bytes.NewReader(testutil.LoadFile(t, tt.reqFile)),
 			)
 
-			sut := AddTask{Store: &store.TaskStore{
-				Tasks: map[entity.TaskID]*entity.Task{},
-			}, Validator: validator.New()}
+			// sut: System Under Test
+			sut := AddTask{
+				Store: &store.TaskStore{
+					Tasks: map[entity.TaskID]*entity.Task{},
+				},
+				Validator: validator.New(),
+			}
 			sut.ServeHTTP(w, r)
 
 			resp := w.Result()
