@@ -10,7 +10,6 @@ require (
 	github.com/go-sql-driver/mysql v1.8.1
 	github.com/google/go-cmp v0.6.0
 	github.com/jmoiron/sqlx v1.4.0
-	github.com/kmin1231/go_server_session/week06/Chapter18 v0.0.0-20241117183301-638ef55179f3
 	golang.org/x/sync v0.9.0
 )
 
