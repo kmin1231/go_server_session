@@ -7,9 +7,9 @@ import (
 	"testing"
 
 	"github.com/go-playground/validator/v10"
-	"github.com/kmin1231/go_server_session/week06/Chapter18/entity"
-	"github.com/kmin1231/go_server_session/week06/Chapter18/store"
-	"github.com/kmin1231/go_server_session/week06/Chapter18/testutil"
+	"github.com/kmin1231/go_server_session/week07/Chapter19/entity"
+	"github.com/kmin1231/go_server_session/week07/Chapter19/store"
+	"github.com/kmin1231/go_server_session/week07/Chapter19/testutil"
 )
 
 func TestAddTask(t *testing.T) {

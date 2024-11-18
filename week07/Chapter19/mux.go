@@ -6,10 +6,10 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-playground/validator/v10"
-	"github.com/kmin1231/go_server_session/week06/Chapter18/clock"
-	"github.com/kmin1231/go_server_session/week06/Chapter18/config"
-	"github.com/kmin1231/go_server_session/week06/Chapter18/handler"
-	"github.com/kmin1231/go_server_session/week06/Chapter18/store"
+	"github.com/kmin1231/go_server_session/week07/Chapter19/clock"
+	"github.com/kmin1231/go_server_session/week07/Chapter19/config"
+	"github.com/kmin1231/go_server_session/week07/Chapter19/handler"
+	"github.com/kmin1231/go_server_session/week07/Chapter19/store"
 )
 
 func NewMux(ctx context.Context, cfg *config.Config) (http.Handler, func(), error) {
