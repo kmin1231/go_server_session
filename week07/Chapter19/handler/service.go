@@ -6,7 +6,7 @@ import (
 	"github.com/kmin1231/go_server_session/week07/Chapter19/entity"
 )
 
-//go:generate go run github.com/matryer/moq -out moq_test.go . ListTaskService AddTaskService
+//go:generate go run github.com/matryer/moq -out moq_test.go . ListTasksService AddTaskService
 type ListTasksService interface {
 	ListTasks(ctx context.Context) (entity.Tasks, error)
 }

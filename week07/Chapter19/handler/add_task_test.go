@@ -10,6 +10,7 @@ import (
 
 	"github.com/go-playground/validator/v10"
 	"github.com/kmin1231/go_server_session/week07/Chapter19/entity"
+
 	// "github.com/kmin1231/go_server_session/week07/Chapter19/store"
 	"github.com/kmin1231/go_server_session/week07/Chapter19/testutil"
 )
@@ -57,7 +58,7 @@ func TestAddTask(t *testing.T) {
 			// 	Validator: validator.New(),
 			// }
 
-			moq := &AddTaskServiceMock()
+			moq := &AddTaskServiceMock{}
 			moq.AddTaskFunc = func(
 				ctx context.Context, title string,
 			) (*entity.Task, error) {
