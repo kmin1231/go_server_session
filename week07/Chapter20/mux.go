@@ -7,10 +7,10 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/go-playground/validator/v10"
 	"github.com/kmin1231/go_server_session/week07/Chapter20/clock"
+	"github.com/kmin1231/go_server_session/week07/Chapter20/config"
 	"github.com/kmin1231/go_server_session/week07/Chapter20/handler"
 	"github.com/kmin1231/go_server_session/week07/Chapter20/service"
 	"github.com/kmin1231/go_server_session/week07/Chapter20/store"
-	"github.com/kmin1231/go_server_session/week07/Chapter20/config"
 )
 
 func NewMux(ctx context.Context, cfg *config.Config) (http.Handler, func(), error) {
@@ -21,6 +21,7 @@ func NewMux(ctx context.Context, cfg *config.Config) (http.Handler, func(), erro
 	})
 	v := validator.New()
 	db, cleanup, err := store.New(ctx, cfg)
+
 	if err != nil {
 		return nil, cleanup, err
 	}
