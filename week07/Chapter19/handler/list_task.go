@@ -1,16 +1,28 @@
 package handler
 
 import (
-	"net/http"
+	// "github.com/jmoiron/sqlx"
+	"context"
+	"fmt"
 
 	"github.com/jmoiron/sqlx"
 	"github.com/kmin1231/go_server_session/week07/Chapter19/entity"
 	"github.com/kmin1231/go_server_session/week07/Chapter19/store"
+	// "github.com/kmin1231/go_server_session/week07/Chapter19/store"
 )
 
 type ListTask struct {
 	DB   *sqlx.DB
 	Repo *store.Repository
+	// Service ListTaskService
+}
+
+func (l *ListTask) ListTasks(ctx context.Context) (entity.Tasks, error) {
+	ts, err := l.Repo.ListTasks(ctx, l.DB)
+	if err != nil {
+		return nil, fmt.Errorf("failed to list: %w", err)
+	}
+	return ts, nil
 }
 
 type task struct {
@@ -21,7 +33,9 @@ type task struct {
 
 func (lt *ListTask) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	ctx := r.Context()
-	tasks, err := lt.Repo.ListTasks(ctx, lt.DB)
+	// tasks, err := lt.Repo.ListTasks(ctx, lt.DB)
+	tasks, err := lt.Service.ListTasks(ctx)
+
 	if err != nil {
 		RespondJSON(ctx, w, &ErrResponse{
 			Message: err.Error(),
