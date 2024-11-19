@@ -49,13 +49,6 @@ func TestAddTask(t *testing.T) {
 				bytes.NewReader(testutil.LoadFile(t, tt.reqFile)),
 			)
 
-			// sut := AddTask{
-			// 	Store: &store.TaskStore{
-			// 		Tasks: map[entity.TaskID]*entity.Task{},
-			// 	},
-			// 	Validator: validator.New(),
-			// }
-
 			moq := &AddTaskServiceMock{}
 			moq.AddTaskFunc = func(
 				ctx context.Context, title string,
