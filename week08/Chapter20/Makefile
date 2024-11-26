@@ -3,7 +3,7 @@
 
 DOCKER_TAG := latest
 build:
-docker build -t kmin1231/go_server_session-week05-chapter15:${DOCKER_TAG} -- target deploy ./
+	docker build -t kmin1231/go_server_session-week05-chapter15:${DOCKER_TAG} -- target deploy ./
 
 build-local:
 	docker compose build --no-cache
