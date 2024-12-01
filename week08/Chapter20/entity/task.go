@@ -15,11 +15,12 @@ const (
 
 // defines'Task' struct with fields with JSON tag
 type Task struct {
-	ID       TaskID     `json:"id" db:"id"`
-	Title    string     `json:"title" db:"title"`
-	Status   TaskStatus `json:"status" db:"status"`
-	Created  time.Time  `json:"created" db:"created"`
-	Modified time.Time  `json:"modified" db:"modified"`
+	ID			TaskID		`json:"id" db:"id"`
+	UserID		UserID		`json:"user_id" db:"user_id"`
+	Title   	string		`json:"title" db:"title"`
+	Status  	TaskStatus	`json:"status" db:"status"`
+	Created 	time.Time	`json:"created" db:"created"`
+	Modified	time.Time	`json:"modified" db:"modified"`
 }
 
 // defines new type 'Tasks'
