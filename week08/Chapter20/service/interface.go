@@ -3,8 +3,8 @@ package service
 import (
 	"context"
 
-	"github.com/kmin1231/go_server_session/week07/Chapter20/entity"
-	"github.com/kmin1231/go_server_session/week07/Chapter20/store"
+	"github.com/kmin1231/go_server_session/week08/Chapter20/entity"
+	"github.com/kmin1231/go_server_session/week08/Chapter20/store"
 )
 
 //go:generate go run github.com/matryer/moq -out moq_test.go . TaskAdder TaskLister

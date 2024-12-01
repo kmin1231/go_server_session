@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/kmin1231/go_server_session/week07/Chapter20/entity"
-	"github.com/kmin1231/go_server_session/week07/Chapter20/store"
+	"github.com/kmin1231/go_server_session/week08/Chapter20/entity"
+	"github.com/kmin1231/go_server_session/week08/Chapter20/store"
 )
 
 type AddTask struct {

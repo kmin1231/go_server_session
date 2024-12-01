@@ -9,8 +9,8 @@ import (
 
 	_ "github.com/go-sql-driver/mysql" // blank identifier just for initialization
 	"github.com/jmoiron/sqlx"
-	"github.com/kmin1231/go_server_session/week07/Chapter20/clock"
-	"github.com/kmin1231/go_server_session/week07/Chapter20/config"
+	"github.com/kmin1231/go_server_session/week08/Chapter20/clock"
+	"github.com/kmin1231/go_server_session/week08/Chapter20/config"
 )
 
 const (

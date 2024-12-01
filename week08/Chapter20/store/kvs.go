@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/go-redis/redis/v8"
-	"github.com/kmin1231/go_server_session/week07/Chapter20/config"
-	"github.com/kmin1231/go_server_session/week07/Chapter20/entity"
+	"github.com/kmin1231/go_server_session/week08/Chapter20/config"
+	"github.com/kmin1231/go_server_session/week08/Chapter20/entity"
 )
 
 func NewKVS(ctx context.Context, cfg *config.Config) (*KVS, error) {

@@ -3,7 +3,7 @@ package store
 import (
 	"context"
 
-	"github.com/kmin1231/go_server_session/week07/Chapter20/entity"
+	"github.com/kmin1231/go_server_session/week08/Chapter20/entity"
 )
 
 func (r *Repository) AddTask(

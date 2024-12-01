@@ -1,4 +1,4 @@
-module github.com/kmin1231/go_server_session/week07/Chapter20
+module github.com/kmin1231/go_server_session/week08/Chapter20
 
 go 1.23.1
 
