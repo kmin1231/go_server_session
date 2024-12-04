@@ -2,7 +2,9 @@
 
 ### 📖 Overview
 
-This 8-week study session focuses on learning <b><code>Go</code></b> language and <b>backend development</b>, covering foundational concepts to practical server-building skills.
+This 8-week study session focuses on learning <b><code>Go</code></b> language and <b>backend development</b>, covering foundational concepts to practical server-building skills.<br>
+
+<i>※ This repository is for learning purposes, and may include duplicate code across chapters.</i>
 
 #### 📂 Week01 - 03
   - Learn the basic syntax of <b><code>Go</code></b>, including:
@@ -21,6 +23,7 @@ This 8-week study session focuses on learning <b><code>Go</code></b> language an
     - Docker containers
     - CI/CD practices
     - Test writing
+<br>
 
 ### 💡 Development Environment
 - Windows laptop
