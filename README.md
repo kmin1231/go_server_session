@@ -23,6 +23,7 @@ This 8-week study session focuses on learning <b><code>Go</code></b> language an
     - Docker containers
     - CI/CD practices
     - Test writing
+
 <br>
 
 ### 💡 Development Environment
