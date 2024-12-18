@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
 
       - name: Run golangci-lint with reviewdog
         uses: reviewdog/action-golangci-lint@v2
@@ -19,4 +19,4 @@ jobs:
           golangci_lint_flags: "--config=../../.golangci.yml ./..."
           fail_on_error: true
           reporter: "github-pr-review"
-          workdir: "week05"
+          workdir: "week05/Chapter15"
